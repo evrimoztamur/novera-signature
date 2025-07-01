@@ -114,13 +114,13 @@
                                 <img src="novera_logo.png" alt="Novera Logo" width="140" height="140" style="width: 140px; height: 140px; display: block;">
                             </td>
                             <td style="vertical-align: top; font-family: 'Aptos', sans-serif; font-size: 11pt; line-height: 1.4;">
-                                <b>{{name}}</b>{{#title}} &mdash; {{title}}{{/title}}<br>
+                                <div><b>Your trusted partner in tax & finance</b></div>
                                 <div style="margin-top: 8px;">
+                                    {{name}}{{#title}} &mdash; {{title}}{{/title}}<br>
                                     <a href="mailto:{{email}}" style="color: #082740; text-decoration: none;">{{email}}</a> &ndash; <a href="https://www.novera.nl/" style="color: #082740; text-decoration: none;">www.novera.nl</a><br>
                                     <a href="tel:{{telephone1p}}" style="color: #082740; text-decoration: none;">{{telephone1}}</a>{{#telephone2}} &ndash; <a href="tel:{{telephone2p}}" style="color: #082740; text-decoration: none;">{{telephone2}}</a>{{/telephone2}}<br>
                                     Keizersgracht 477E, 1017 DL Amsterdam
                                 </div>
-                                <div style="margin-top: 8px;">Your trusted partner in tax & finance</div>
                             </td>
                         </tr>
                     </tbody>
@@ -189,13 +189,13 @@
 
             function signatureTXT(information) {
                 return Mustache.render(`
-{{name}}{{#title}} — {{title}}{{/title}}
+Your trusted partner in tax & finance
 
-Keizersgracht 477E, 1017 DL Amsterdam
+{{name}}{{#title}} — {{title}}{{/title}}
 {{email}} – www.novera.nl
 {{telephone1}}{{#telephone2}} – {{telephone2}}{{/telephone2}}
+Keizersgracht 477E, 1017 DL Amsterdam
 
-Your trusted partner in tax & finance
 Our general conditions apply to all our services, which we will gladly send to you at request.
 Liability shall be limited to the amount paid out under the professional liability insurance in the matter concerned.
 
@@ -991,29 +991,25 @@ div.WordSection1
                 src="Novera_files/image001.png" v:shapes="Picture_x0020_1" style="width: 140px; height: 140px; display: block;"><![endif]></span>
             </td>
             <td style="vertical-align: top; font-family: 'Aptos', sans-serif; font-size: 11pt; line-height: 1.4;">
-                <span style='font-family:"Aptos",sans-serif'><b>{{name}}</b>{{#title}} &mdash; {{title}}{{/title}}<br>
+                <span style='font-family:"Aptos",sans-serif'><b>Your trusted partner in tax & finance</b><br>
                 <div style="margin-top: 8px;">
+                    {{name}}{{#title}} &mdash; {{title}}{{/title}}<br>
                     <a href="mailto:{{email}}" style='color: #082740; text-decoration: none;'><span
                     style='color:#082740'>{{email}}</span></a> &ndash; <a
                     href="https://www.novera.nl/" style='color: #082740; text-decoration: none;'><span
                     style='color:#082740'>www.novera.nl</span></a><br>
                     <a href="tel:{{telephone1p}}" style='color: #082740; text-decoration: none;'><span style='color:#082740'>{{telephone1}}</span></a>{{#telephone2}} &ndash; <a href="tel:{{telephone2p}}" style='color: #082740; text-decoration: none;'><span style='color:#082740'>{{telephone2}}</span></a>{{/telephone2}}<br>
                     Keizersgracht 477E, 1017 DL Amsterdam
-                </div>
-                <div style="margin-top: 8px;">Your trusted partner in tax & finance</div></span>
+                </div></span>
             </td>
         </tr>
     </tbody>
 </table>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-style='font-size:9.0pt;font-family:"Aptos",sans-serif'>Our general
-conditions apply to all our services, which we will gladly send to you at
-request.<br>
-Liability shall be limited to the amount paid out under the professional
-liability insurance in the matter concerned.</span></p>
-
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><o:p>&nbsp;</o:p></p>
+<div style="padding-top: 10px; font-size: 9pt; font-family: 'Aptos',sans-serif;">
+    Our general conditions apply to all our services, which we will gladly send to you at request.<br>
+    Liability shall be limited to the amount paid out under the professional liability insurance in the matter concerned.
+</div>
 
 </div>
 
