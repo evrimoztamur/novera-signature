@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="m-2">
-                        <h3>Live Preview</h3>
+                        <h3>Preview</h3>
                         <div class="preview-container" id="signature-preview"></div>
                     </div>
                 </div>
@@ -111,16 +111,17 @@
                     <tbody>
                         <tr>
                             <td style="padding-right: 15px; vertical-align: top;">
-                                <img src="novera_logo.png" alt="Novera Logo" width="140" height="140" style="width: 140px; height: 140px; display: block;">
+                                <img src="novera_logo.png" alt="Novera Logo" width="150" height="150" style="width: 150px; height: 150px; display: block;">
                             </td>
-                            <td style="vertical-align: top; font-family: 'Aptos', sans-serif; font-size: 11pt; line-height: 1.4;">
+                            <td style="color: #082740; vertical-align: top; font-family: 'Aptos', sans-serif; font-size: 11pt; line-height: 1.4;">
                                 <div><b>Your trusted partner in tax & finance</b></div>
-                                <div style="margin-top: 8px;">
+                                <div style="margin-top: 8px; margin-bottom: 8px;">
                                     {{name}}{{#title}} &mdash; {{title}}{{/title}}<br>
                                     <a href="mailto:{{email}}" style="color: #082740; text-decoration: none;">{{email}}</a> &ndash; <a href="https://www.novera.nl/" style="color: #082740; text-decoration: none;">www.novera.nl</a><br>
                                     <a href="tel:{{telephone1p}}" style="color: #082740; text-decoration: none;">{{telephone1}}</a>{{#telephone2}} &ndash; <a href="tel:{{telephone2p}}" style="color: #082740; text-decoration: none;">{{telephone2}}</a>{{/telephone2}}<br>
-                                    Keizersgracht 477E, 1017 DL Amsterdam
+                                    Keizersgracht 477E, 1017 DL Amsterdam<br>
                                 </div>
+                                <a href="https://www.linkedin.com/company/novera-belastingadviseurs/" style="color: #082740; text-decoration: none;"><img src="linkedin.png" alt="LinkedIn" style="width: 28px; height: 28px; vertical-align: middle;"></a>
                             </td>
                         </tr>
                     </tbody>
@@ -166,24 +167,40 @@
 
                 var files = zip.folder("Novera_files");
                 files.file("themedata.thmx", "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", { base64: true });
-                files.file("filelist.xml", "PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPg0KIDxvOk1haW5GaWxlIEhSZWY9Ii4uL0NDT1VOVC5odG0iLz4NCiA8bzpGaWxlIEhSZWY9InRoZW1lZGF0YS50aG14Ii8+DQogPG86RmlsZSBIUmVmPSJjb2xvcnNjaGVtZW1hcHBpbmcueG1sIi8+DQogPG86RmlsZSBIUmVmPSJpbWFnZTAwMS5wbmciLz4NCiA8bzpGaWxlIEhSZWY9ImZpbGVsaXN0LnhtbCIvPg0KPC94bWw+", { base64: true });
-                // Load and convert novera_logo.png to base64
-                fetch('novera_logo.png')
-                    .then(response => response.blob())
-                    .then(blob => {
-                        const reader = new FileReader();
-                        reader.onload = function() {
-                            const base64Data = reader.result.split(',')[1]; // Remove data:image/png;base64, prefix
-                            files.file("image001.png", base64Data, { base64: true });
-                            
-                            // Continue with zip generation after image is loaded
-                            zip.generateAsync({ type: "blob" })
-                                .then(function (content) {
-                                    saveAs(content, "signature_novera.zip");
-                                });
-                        };
-                        reader.readAsDataURL(blob);
-                    });
+                files.file("filelist.xml", "PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPg0KIDxvOk1haW5GaWxlIEhSZWY9Ii4uL05vdmVyYS5odG0iLz4NCiA8bzpGaWxlIEhSZWY9InRoZW1lZGF0YS50aG14Ii8+DQogPG86RmlsZSBIUmVmPSJjb2xvcnNjaGVtZW1hcHBpbmcueG1sIi8+DQogPG86RmlsZSBIUmVmPSJpbWFnZTAwMS5wbmciLz4NCiA8bzpGaWxlIEhSZWY9ImltYWdlMDAyLnBuZyIvPg0KIDxvOkZpbGUgSFJlZj0iZmlsZWxpc3QueG1sIi8+DQo8L3htbD4=", { base64: true });
+                // Load and convert images to base64
+                Promise.all([
+                    fetch('novera_logo.png').then(response => response.blob()),
+                    fetch('linkedin.png').then(response => response.blob())
+                ]).then(([logoBlob, linkedinBlob]) => {
+                    const logoReader = new FileReader();
+                    const linkedinReader = new FileReader();
+                    let loadedImages = 0;
+                    
+                    logoReader.onload = function() {
+                        const base64Data = logoReader.result.split(',')[1]; // Remove data:image/png;base64, prefix
+                        files.file("image001.png", base64Data, { base64: true });
+                        loadedImages++;
+                        if (loadedImages === 2) generateZip();
+                    };
+                    
+                    linkedinReader.onload = function() {
+                        const base64Data = linkedinReader.result.split(',')[1]; // Remove data:image/png;base64, prefix
+                        files.file("image002.png", base64Data, { base64: true });
+                        loadedImages++;
+                        if (loadedImages === 2) generateZip();
+                    };
+                    
+                    function generateZip() {
+                        zip.generateAsync({ type: "blob" })
+                            .then(function (content) {
+                                saveAs(content, "signature_novera.zip");
+                            });
+                    }
+                    
+                    logoReader.readAsDataURL(logoBlob);
+                    linkedinReader.readAsDataURL(linkedinBlob);
+                });
                 files.file("colorschememapping.xml", "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPGE6Y2xyTWFwIHhtbG5zOmE9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9kcmF3aW5nbWwvMjAwNi9tYWluIiBiZzE9Imx0MSIgdHgxPSJkazEiIGJnMj0ibHQyIiB0eDI9ImRrMiIgYWNjZW50MT0iYWNjZW50MSIgYWNjZW50Mj0iYWNjZW50MiIgYWNjZW50Mz0iYWNjZW50MyIgYWNjZW50ND0iYWNjZW50NCIgYWNjZW50NT0iYWNjZW50NSIgYWNjZW50Nj0iYWNjZW50NiIgaGxpbms9ImhsaW5rIiBmb2xIbGluaz0iZm9sSGxpbmsiLz4=", { base64: true });
             }
 
@@ -987,20 +1004,21 @@ div.WordSection1
                 </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75"
                     style='width:105pt;height:105pt;visibility:visible;mso-wrap-style:square'>
                     <v:imagedata src="Novera_files/image001.png" o:title=""/>
-                </v:shape><![endif]--><![if !vml]><img width=140 height=140
-                src="Novera_files/image001.png" v:shapes="Picture_x0020_1" style="width: 140px; height: 140px; display: block;"><![endif]></span>
+                </v:shape><![endif]--><![if !vml]><img width=150 height=150
+                src="Novera_files/image001.png" v:shapes="Picture_x0020_1" style="width: 150px; height: 150px; display: block;"><![endif]></span>
             </td>
-            <td style="vertical-align: top; font-family: 'Aptos', sans-serif; font-size: 11pt; line-height: 1.4;">
+            <td style="color: #082740; vertical-align: top; font-family: 'Aptos', sans-serif; font-size: 11pt; line-height: 1.4;">
                 <span style='font-family:"Aptos",sans-serif'><b>Your trusted partner in tax & finance</b><br>
-                <div style="margin-top: 8px;">
+                <div style="margin-top: 8px; margin-bottom: 8px;">
                     {{name}}{{#title}} &mdash; {{title}}{{/title}}<br>
                     <a href="mailto:{{email}}" style='color: #082740; text-decoration: none;'><span
                     style='color:#082740'>{{email}}</span></a> &ndash; <a
                     href="https://www.novera.nl/" style='color: #082740; text-decoration: none;'><span
                     style='color:#082740'>www.novera.nl</span></a><br>
                     <a href="tel:{{telephone1p}}" style='color: #082740; text-decoration: none;'><span style='color:#082740'>{{telephone1}}</span></a>{{#telephone2}} &ndash; <a href="tel:{{telephone2p}}" style='color: #082740; text-decoration: none;'><span style='color:#082740'>{{telephone2}}</span></a>{{/telephone2}}<br>
-                    Keizersgracht 477E, 1017 DL Amsterdam
-                </div></span>
+                    Keizersgracht 477E, 1017 DL Amsterdam<br>
+                </div>
+                <a href="https://www.linkedin.com/company/novera-belastingadviseurs/" style='color: #082740; text-decoration: none;'><span style='font-family:"Aptos",sans-serif;mso-no-proof:yes'><img width=28 height=28 src="Novera_files/image002.png" alt="LinkedIn" style="width: 28px; height: 28px; vertical-align: middle;"></span></a></span>
             </td>
         </tr>
     </tbody>
